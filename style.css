@@ -293,3 +293,143 @@ footer p { margin: .25rem 0; }
   .intro { display: none; }
   .reveal { opacity: 1; transform: none; }
 }
+
+
+/* Finitions premium — version 2 */
+.hero {
+  min-height: 92svh;
+  padding-bottom: 4.4rem;
+}
+
+.hero-content {
+  transform: translateY(1rem);
+}
+
+.hero-copy {
+  max-width: 650px;
+  font-size: clamp(1.45rem, 3.3vw, 1.95rem);
+  line-height: 1.35;
+}
+
+.scroll-link {
+  flex-direction: column;
+  gap: .3rem;
+  margin-top: 2.1rem;
+}
+
+.scroll-arrow {
+  display: inline-block;
+  font-size: 1rem;
+  animation: driftDown 1.8s ease-in-out infinite;
+}
+
+@keyframes driftDown {
+  0%, 100% { transform: translateY(0); opacity: .65; }
+  50% { transform: translateY(7px); opacity: 1; }
+}
+
+.narrow {
+  max-width: 820px;
+}
+
+.narrow p:last-child {
+  max-width: 690px;
+  margin-top: 1.7rem;
+  font-size: 1.03rem;
+}
+
+.card {
+  background-size: 100%;
+  transition:
+    transform .55s cubic-bezier(.2,.7,.2,1),
+    box-shadow .55s ease,
+    background-size .8s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 34px 90px rgba(49, 39, 31, .2);
+  background-size: 106%;
+}
+
+.card-shade {
+  transition: background .55s ease;
+}
+
+.card:hover .card-shade {
+  background: linear-gradient(to top, rgba(25,21,19,.88), rgba(25,21,19,.01) 72%);
+}
+
+.button {
+  transition:
+    transform .3s ease,
+    background .3s ease,
+    color .3s ease,
+    box-shadow .3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(41,39,37,.16);
+}
+
+.footer-thanks {
+  margin-bottom: .8rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,.84);
+}
+
+.reveal {
+  transform: translateY(34px);
+  transition:
+    opacity 1s cubic-bezier(.2,.7,.2,1),
+    transform 1s cubic-bezier(.2,.7,.2,1);
+}
+
+.film-card {
+  transition: transform .45s ease, box-shadow .45s ease;
+}
+
+.film-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 80px rgba(49,39,31,.14);
+}
+
+.film-thumb {
+  transition: transform .7s ease;
+}
+
+.film-card:hover .film-thumb {
+  transform: scale(1.025);
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: 88svh;
+    padding-bottom: 3.6rem;
+  }
+
+  .hero-content {
+    transform: none;
+  }
+
+  .hero-copy {
+    font-size: clamp(1.3rem, 5vw, 1.65rem);
+  }
+
+  .card {
+    background-size: cover;
+  }
+
+  .card:hover {
+    transform: none;
+    background-size: cover;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-arrow {
+    animation: none !important;
+  }
+}
