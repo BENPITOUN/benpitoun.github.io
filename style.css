@@ -433,3 +433,56 @@ footer p { margin: .25rem 0; }
     animation: none !important;
   }
 }
+
+/* Pages albums et bonus */
+.hero h1 { white-space: nowrap; }
+.cards { max-width: 1280px; gap: 1.6rem; }
+.card { min-height: 660px; }
+.download { display: none; }
+
+.album-grid {
+  max-width: 1180px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+}
+.album-card {
+  position: relative;
+  min-height: 440px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 28px;
+  color: white;
+  text-decoration: none;
+  background-position: center;
+  background-size: cover;
+  box-shadow: var(--shadow);
+  transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s ease, background-size .8s ease;
+}
+.album-card:last-child { grid-column: 1 / -1; min-height: 500px; }
+.album-card:hover { transform: translateY(-7px); box-shadow: 0 34px 90px rgba(49,39,31,.2); background-size: 106%; }
+.album-shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,17,15,.82), rgba(20,17,15,.05) 72%); }
+.album-content { position: relative; z-index: 1; padding: clamp(2rem, 5vw, 3.2rem); width: 100%; }
+.album-number { display: block; margin-bottom: .5rem; font-size: .65rem; letter-spacing: .24em; }
+.album-content h2 { margin: 0 0 1rem; font-size: clamp(2.7rem, 5vw, 4.6rem); line-height: .95; }
+.album-action { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.album-mairie { background-image: url("assets/mairie.jpg"), linear-gradient(145deg,#c99c85,#4a3e38); }
+.album-pool { background-image: url("assets/Pool-Henne.jpg"), linear-gradient(145deg,#d2ae98,#5d4d46); }
+.album-ceremonie { background-image: url("assets/ceremonie.jpg"), linear-gradient(145deg,#b78073,#2f2a28); }
+.album-maries { background-image: url("assets/maries.jpg"), linear-gradient(145deg,#caa693,#5a4a43); }
+.album-cocktail { background-image: url("assets/cocktail-soiree.jpg"), linear-gradient(145deg,#6d5a51,#292725); }
+
+.thumb-adjointe { background-image: url("assets/adjointe.jpg"), linear-gradient(145deg,#c99c85,#4a3e38); }
+.thumb-rabbin { background-image: url("assets/rabin.jpg"), linear-gradient(145deg,#b78073,#2f2a28); }
+.thumb-ketouba { background-image: url("assets/ceremonie.jpg"), linear-gradient(145deg,#d2ae98,#5d4d46); }
+.thumb-tango { background-image: url("assets/tango.jpg"), linear-gradient(145deg,#6d5a51,#292725); }
+
+@media (max-width: 760px) {
+  .hero h1 { white-space: normal; }
+  .card { min-height: 560px; }
+  .album-grid { grid-template-columns: 1fr; }
+  .album-card, .album-card:last-child { grid-column: auto; min-height: 430px; }
+  .album-card:hover { transform: none; background-size: cover; }
+}
