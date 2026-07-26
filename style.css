@@ -491,3 +491,19 @@ footer p { margin: .25rem 0; }
   .album-card, .album-card:last-child { grid-column: auto; min-height: 430px; }
   .album-card:hover { transform: none; background-size: cover; }
 }
+
+/* Ajustements de cadrage — mobile uniquement */
+@media (max-width: 760px) {
+  .hero {
+    background-position: 58% center;
+  }
+
+  .card-photo {
+    background-position: 62% center;
+  }
+
+  .thumb-teaser {
+    background-position: 58% center;
+  }
+}
+
