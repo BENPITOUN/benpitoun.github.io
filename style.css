@@ -475,7 +475,7 @@ footer p { margin: .25rem 0; }
 .album-action { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .album-mairie { background-image: url("assets/mairie.jpg"), linear-gradient(145deg,#c99c85,#4a3e38); }
 .album-pool { background-image: url("assets/Pool-Henne.jpg"), linear-gradient(145deg,#d2ae98,#5d4d46); }
-.album-ceremonie { background-image: url("assets/ketouba.jpg"), linear-gradient(145deg,#b78073,#2f2a28); }
+.album-ceremonie { background-image: url("assets/ceremonie.jpg"), linear-gradient(145deg,#b78073,#2f2a28); }
 .album-maries { background-image: url("assets/maries.jpg"), linear-gradient(145deg,#caa693,#5a4a43); }
 .album-cocktail { background-image: url("assets/cocktail-soiree.jpg"), linear-gradient(145deg,#6d5a51,#292725); }
 
