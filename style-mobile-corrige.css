@@ -466,7 +466,6 @@ footer p { margin: .25rem 0; }
   box-shadow: var(--shadow);
   transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s ease, background-size .8s ease;
 }
-.album-card:last-child { grid-column: 1 / -1; min-height: 500px; }
 .album-card:hover { transform: translateY(-7px); box-shadow: 0 34px 90px rgba(49,39,31,.2); background-size: 106%; }
 .album-shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,17,15,.82), rgba(20,17,15,.05) 72%); }
 .album-content { position: relative; z-index: 1; padding: clamp(2rem, 5vw, 3.2rem); width: 100%; }
@@ -474,7 +473,8 @@ footer p { margin: .25rem 0; }
 .album-content h2 { margin: 0 0 1rem; font-size: clamp(2.7rem, 5vw, 4.6rem); line-height: .95; }
 .album-action { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .album-mairie { background-image: url("assets/mairie.jpg"), linear-gradient(145deg,#c99c85,#4a3e38); }
-.album-pool { background-image: url("assets/Pool-Henne.jpg"), linear-gradient(145deg,#d2ae98,#5d4d46); }
+.album-pool { background-image: url("assets/brunch&pool-party.jpg"), linear-gradient(145deg,#d2ae98,#5d4d46); }
+.album-henne { background-image: url("assets/henne.jpg"), linear-gradient(145deg,#c99c85,#4a3e38); }
 .album-ceremonie { background-image: url("assets/ketouba.jpg"), linear-gradient(145deg,#b78073,#2f2a28); }
 .album-maries { background-image: url("assets/maries.jpg"), linear-gradient(145deg,#caa693,#5a4a43); }
 .album-cocktail { background-image: url("assets/cocktail-soiree.jpg"), linear-gradient(145deg,#6d5a51,#292725); }
@@ -488,7 +488,7 @@ footer p { margin: .25rem 0; }
   .hero h1 { white-space: normal; }
   .card { min-height: 560px; }
   .album-grid { grid-template-columns: 1fr; }
-  .album-card, .album-card:last-child { grid-column: auto; min-height: 430px; }
+  .album-card { grid-column: auto; min-height: 430px; }
   .album-card:hover { transform: none; background-size: cover; }
 }
 
