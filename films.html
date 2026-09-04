@@ -1,206 +1,294 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f1ea">
+
   <title>Les films — Déborah & Benjamin</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="inner-page">
 
-<nav class="topbar">
-  <a href="index.html" class="back-link">← Retour</a>
-  <span>Déborah & Benjamin</span>
-  <span>31.05.2026</span>
-</nav>
+  <nav class="topbar">
+    <a href="index.html" class="back-link">← Retour</a>
+    <span>Déborah & Benjamin</span>
+    <span>31.05.2026</span>
+  </nav>
 
-<main class="films-main">
+  <main class="films-main">
 
-<header class="films-header reveal">
-  <p class="eyebrow peach">Nos films</p>
-  <h1>Revivez les plus beaux moments</h1>
-  <p>Choisissez le film que vous souhaitez regarder.</p>
-</header>
+    <header class="films-header reveal">
+      <p class="eyebrow peach">Nos films</p>
+      <h1>Revivez les plus beaux moments</h1>
+      <p>Choisissez le film que vous souhaitez regarder.</p>
+    </header>
 
-<section class="film-grid">
+    <section class="film-grid">
 
-  <article class="film-card reveal">
-    <div class="film-thumb thumb-full">
-      <span>01</span>
-    </div>
+      <!-- FILM COMPLET -->
+      <article class="film-card reveal">
 
-    <div class="film-info">
-      <p class="card-kicker">7,65 Go</p>
-      <h2>Le film complet</h2>
-      <p>L’intégralité des événements du mariage : mairie, pool party & henné, cérémonie religieuse et réception.</p>
+        <div class="film-thumb thumb-full">
+          <span>01</span>
+        </div>
 
-      <div class="video-actions">
-        <button class="button dark watch-button" type="button" data-player="player-full">
-          Regarder
-        </button>
+        <div class="film-info">
 
-        <a class="download-button"
-           href="https://1drv.ms/v/c/fe005e79bfca4940/IQBIdTJ2O6qjRb9RRKXOKWN0ATMLtKTwSLD7HVVD_84lqXA?e=1VzArn"
-           target="_blank"
-           rel="noopener"
-           aria-label="Télécharger le film complet"
-           title="Télécharger">
-          ↓
-        </a>
-      </div>
+          <p class="card-kicker">7,65 Go</p>
 
-      <div class="video-player" id="player-full" hidden>
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/RJbhAXi7x0k?rel=0"
-          title="Le film complet"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </article>
+          <h2>Le film complet</h2>
 
+          <p>
+            L’intégralité des événements du mariage :
+            mairie, pool party & henné, cérémonie religieuse et réception.
+          </p>
 
-  <article class="film-card reveal">
-    <div class="film-thumb thumb-best">
-      <span>02</span>
-    </div>
+          <div class="video-actions">
 
-    <div class="film-info">
-      <p class="card-kicker">2,07 Go</p>
-      <h2>Le Best Of</h2>
-      <p>Une sélection des moments les plus forts.</p>
+            <button
+              class="button dark watch-button"
+              type="button"
+              data-player="player-full">
+              ▶ Regarder
+            </button>
 
-      <div class="video-actions">
-        <button class="button dark watch-button" type="button" data-player="player-best">
-          Regarder
-        </button>
+            <a
+              class="download-button"
+              href="https://1drv.ms/v/c/fe005e79bfca4940/IQBIdTJ2O6qjRb9RRKXOKWN0ATMLtKTwSLD7HVVD_84lqXA?e=1VzArn"
+              target="_blank"
+              rel="noopener"
+              aria-label="Télécharger le film complet">
+              ↓ Télécharger
+            </a>
 
-        <a class="download-button"
-           href="https://1drv.ms/v/c/fe005e79bfca4940/IQA9j2LU069tQZHTK4iZlwjrATEVMWPv9kOVrE483ljqejA?e=RYAW4C"
-           target="_blank"
-           rel="noopener"
-           aria-label="Télécharger le Best Of"
-           title="Télécharger">
-          ↓
-        </a>
-      </div>
+          </div>
 
-      <div class="video-player" id="player-best" hidden>
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/dii75YGrFJs?rel=0"
-          title="Le Best Of"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </article>
+          <div class="video-player" id="player-full" hidden>
+
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/RJbhAXi7x0k?rel=0"
+              title="Le film complet"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+          </div>
+
+        </div>
+
+      </article>
 
 
-  <article class="film-card reveal">
-    <div class="film-thumb thumb-teaser">
-      <span>03</span>
-    </div>
+      <!-- BEST OF -->
+      <article class="film-card reveal">
 
-    <div class="film-info">
-      <p class="card-kicker">500 Mo</p>
-      <h2>Le teaser</h2>
-      <p>Quelques minutes pour replonger dans l’ambiance.</p>
+        <div class="film-thumb thumb-best">
+          <span>02</span>
+        </div>
 
-      <div class="video-actions">
-        <button class="button dark watch-button" type="button" data-player="player-teaser">
-          Regarder
-        </button>
+        <div class="film-info">
 
-        <a class="download-button"
-           href="https://1drv.ms/v/c/fe005e79bfca4940/IQAjCyGfygCZTqTep9M6bsvCAYCxd21ZL0XIhsGJO7BipLE?e=xhvKRP"
-           target="_blank"
-           rel="noopener"
-           aria-label="Télécharger le teaser"
-           title="Télécharger">
-          ↓
-        </a>
-      </div>
+          <p class="card-kicker">2,07 Go</p>
 
-      <div class="video-player" id="player-teaser" hidden>
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/G0pxFi8_8NE?rel=0"
-          title="Le teaser"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </article>
+          <h2>Le Best Of</h2>
+
+          <p>
+            Une sélection des moments les plus forts.
+          </p>
+
+          <div class="video-actions">
+
+            <button
+              class="button dark watch-button"
+              type="button"
+              data-player="player-best">
+              ▶ Regarder
+            </button>
+
+            <a
+              class="download-button"
+              href="https://1drv.ms/v/c/fe005e79bfca4940/IQA9j2LU069tQZHTK4iZlwjrATEVMWPv9kOVrE483ljqejA?e=RYAW4C"
+              target="_blank"
+              rel="noopener"
+              aria-label="Télécharger le Best Of">
+              ↓ Télécharger
+            </a>
+
+          </div>
+
+          <div class="video-player" id="player-best" hidden>
+
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/dii75YGrFJs?rel=0"
+              title="Le Best Of"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+          </div>
+
+        </div>
+
+      </article>
 
 
-  <article class="film-card reveal">
-    <div class="film-thumb thumb-bonus">
-      <span>04</span>
-    </div>
+      <!-- TEASER -->
+      <article class="film-card reveal">
 
-    <div class="film-info">
-      <p class="card-kicker">4 vidéos</p>
-      <h2>Les bonus</h2>
-      <p>Discours, Ketouba et surprise des mariés.</p>
+        <div class="film-thumb thumb-teaser">
+          <span>03</span>
+        </div>
 
-      <a class="button dark" href="bonus.html">
-        Découvrir les bonus
-      </a>
-    </div>
-  </article>
+        <div class="film-info">
 
-</section>
+          <p class="card-kicker">500 Mo</p>
 
-</main>
+          <h2>Le teaser</h2>
 
-<footer>
-  <p class="footer-thanks">Merci d’avoir célébré cette journée avec nous.</p>
-  <p class="signature">Déborah & Benjamin</p>
-</footer>
+          <p>
+            Quelques minutes pour replonger dans l’ambiance.
+          </p>
 
-<script>
-  document.querySelectorAll(".watch-button").forEach((button) => {
-    button.addEventListener("click", () => {
-      const player = document.getElementById(button.dataset.player);
-      const isHidden = player.hasAttribute("hidden");
+          <div class="video-actions">
 
-      document.querySelectorAll(".video-player").forEach((otherPlayer) => {
-        if (otherPlayer !== player) {
-          otherPlayer.setAttribute("hidden", "");
+            <button
+              class="button dark watch-button"
+              type="button"
+              data-player="player-teaser">
+              ▶ Regarder
+            </button>
+
+            <a
+              class="download-button"
+              href="https://1drv.ms/v/c/fe005e79bfca4940/IQAjCyGfygCZTqTep9M6bsvCAYCxd21ZL0XIhsGJO7BipLE?e=xhvKRP"
+              target="_blank"
+              rel="noopener"
+              aria-label="Télécharger le teaser">
+              ↓ Télécharger
+            </a>
+
+          </div>
+
+          <div class="video-player" id="player-teaser" hidden>
+
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/G0pxFi8_8NE?rel=0"
+              title="Le teaser"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- BONUS -->
+      <article class="film-card reveal">
+
+        <div class="film-thumb thumb-bonus">
+          <span>04</span>
+        </div>
+
+        <div class="film-info">
+
+          <p class="card-kicker">4 vidéos</p>
+
+          <h2>Les bonus</h2>
+
+          <p>
+            Discours, Ketouba et surprise des mariés.
+          </p>
+
+          <a class="button dark" href="bonus.html">
+            Découvrir les bonus
+          </a>
+
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p class="footer-thanks">
+      Merci d’avoir célébré cette journée avec nous.
+    </p>
+
+    <p class="signature">
+      Déborah & Benjamin
+    </p>
+
+  </footer>
+
+
+  <script>
+    document.querySelectorAll(".watch-button").forEach((button) => {
+
+      button.addEventListener("click", () => {
+
+        const player = document.getElementById(button.dataset.player);
+        const isHidden = player.hasAttribute("hidden");
+
+        document.querySelectorAll(".video-player").forEach((otherPlayer) => {
+          if (otherPlayer !== player) {
+            otherPlayer.setAttribute("hidden", "");
+          }
+        });
+
+        document.querySelectorAll(".watch-button").forEach((otherButton) => {
+          if (otherButton !== button) {
+            otherButton.textContent = "▶ Regarder";
+          }
+        });
+
+        if (isHidden) {
+
+          player.removeAttribute("hidden");
+
+          button.textContent = "✕ Fermer";
+
+          player.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+          });
+
+        } else {
+
+          player.setAttribute("hidden", "");
+
+          button.textContent = "▶ Regarder";
+
         }
+
       });
 
-      document.querySelectorAll(".watch-button").forEach((otherButton) => {
-        if (otherButton !== button) {
-          otherButton.textContent = "Regarder";
-        }
-      });
-
-      if (isHidden) {
-        player.removeAttribute("hidden");
-        button.textContent = "Fermer";
-        player.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      } else {
-        player.setAttribute("hidden", "");
-        button.textContent = "Regarder";
-      }
     });
-  });
-</script>
+  </script>
 
-<script src="config.js"></script>
-<script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
