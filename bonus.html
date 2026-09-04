@@ -41,6 +41,196 @@
       <p>Le discours prononcé lors de notre cérémonie civile.</p>
 
       <div class="video-actions">
+        <button class="button dark watch-button" type="button" data-player="player-adjointe">
+          Regarder
+        </button>
+
+        <a class="download-button"
+           href="https://1drv.ms/v/c/fe005e79bfca4940/IQC60GVEB7knQZflV5qRnCfxAbYD88Ypl5VMBLUPHVLP2HA?e=sA8LEf"
+           target="_blank"
+           rel="noopener"
+           aria-label="Télécharger le discours de l’adjointe"
+           title="Télécharger">
+          ↓
+        </a>
+      </div>
+
+      <div class="video-player" id="player-adjointe" hidden>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/zSFVl3jreYs?rel=0"
+          title="Discours de l’adjointe au maire"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="film-card reveal">
+    <div class="film-thumb thumb-rabbin">
+      <span>02</span>
+    </div>
+
+    <div class="film-info">
+      <p class="card-kicker">Cérémonie</p>
+      <h2>Discours du Grand Rabbin de France</h2>
+      <p>Un moment fort et solennel de notre Houppa.</p>
+
+      <div class="video-actions">
+        <button class="button dark watch-button" type="button" data-player="player-rabbin">
+          Regarder
+        </button>
+
+        <a class="download-button"
+           href="https://1drv.ms/v/c/fe005e79bfca4940/IQDqzyZx8Nz5SoJObL8eiVc0Acm5nAv7ZCgJnDCNC0UUDbM?e=Fjuq3d"
+           target="_blank"
+           rel="noopener"
+           aria-label="Télécharger le discours du Grand Rabbin"
+           title="Télécharger">
+          ↓
+        </a>
+      </div>
+
+      <div class="video-player" id="player-rabbin" hidden>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/Dk_JQ2nUjzk?rel=0"
+          title="Discours du Grand Rabbin de France"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="film-card reveal">
+    <div class="film-thumb thumb-ketouba">
+      <span>03</span>
+    </div>
+
+    <div class="film-info">
+      <p class="card-kicker">Tradition</p>
+      <h2>Lecture de la Ketouba</h2>
+      <p>La lecture de notre acte de mariage religieux.</p>
+
+      <div class="video-actions">
+        <button class="button dark watch-button" type="button" data-player="player-ketouba">
+          Regarder
+        </button>
+
+        <a class="download-button"
+           href="https://1drv.ms/v/c/fe005e79bfca4940/IQBhnemkNUCyTrfuvbTE9nVgAfYkqxFQ_273QRnzHiIqBp0?e=B9DHrr"
+           target="_blank"
+           rel="noopener"
+           aria-label="Télécharger la Ketouba"
+           title="Télécharger">
+          ↓
+        </a>
+      </div>
+
+      <div class="video-player" id="player-ketouba" hidden>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/fDGdilpbMHc?rel=0"
+          title="Lecture de la Ketouba"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="film-card reveal">
+    <div class="film-thumb thumb-tango">
+      <span>04</span>
+    </div>
+
+    <div class="film-info">
+      <p class="card-kicker">Surprise</p>
+      <h2>Surprise des mariés : Tango</h2>
+      <p>La surprise préparée par Tata Paulo pour Déborah et Benjamin.</p>
+
+      <div class="video-actions">
+        <button class="button dark watch-button" type="button" data-player="player-tango">
+          Regarder
+        </button>
+
+        <a class="download-button"
+           href="https://1drv.ms/v/c/fe005e79bfca4940/IQBwHuazdbvsRYAT9TpMJFJ-AYJU199sYpebnge30X5Ig9M?e=r0Mjl2"
+           target="_blank"
+           rel="noopener"
+           aria-label="Télécharger le Tango"
+           title="Télécharger">
+          ↓
+        </a>
+      </div>
+
+      <div class="video-player" id="player-tango" hidden>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/KF2ATE9jOQ8?rel=0"
+          title="Surprise des mariés : Tango"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+</main>
+
+<footer>
+  <p class="footer-thanks">Merci d’avoir célébré cette journée avec nous.</p>
+  <p class="signature">Déborah & Benjamin</p>
+</footer>
+
+<script>
+  document.querySelectorAll(".watch-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      const player = document.getElementById(button.dataset.player);
+      const isHidden = player.hasAttribute("hidden");
+
+      document.querySelectorAll(".video-player").forEach((otherPlayer) => {
+        if (otherPlayer !== player) {
+          otherPlayer.setAttribute("hidden", "");
+        }
+      });
+
+      document.querySelectorAll(".watch-button").forEach((otherButton) => {
+        if (otherButton !== button) {
+          otherButton.textContent = "Regarder";
+        }
+      });
+
+      if (isHidden) {
+        player.removeAttribute("hidden");
+        button.textContent = "Fermer";
+        player.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      } else {
+        player.setAttribute("hidden", "");
+        button.textContent = "Regarder";
+      }
+    });
+  });
+</script>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+    <div class="film-info">
+      <p class="card-kicker">Mairie</p>
+      <h2>Discours de l’adjointe au maire</h2>
+      <p>Le discours prononcé lors de notre cérémonie civile.</p>
+
+      <div class="video-actions">
         <a class="button dark"
            href="https://youtu.be/zSFVl3jreYs"
            target="_blank"
