@@ -226,19 +226,21 @@ h3 {
   border-radius: 28px;
   color: white;
   box-shadow: var(--shadow);
-  background-size: 100%;
+
+  /* CORRECTION DESKTOP :
+     une seule image qui remplit toute la carte */
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   transition:
     transform .55s cubic-bezier(.2,.7,.2,1),
-    box-shadow .55s ease,
-    background-size .8s ease;
+    box-shadow .55s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 34px 90px rgba(49,39,31,.2);
-  background-size: 106%;
 }
 
 .card-photo {
@@ -674,7 +676,6 @@ footer p {
     linear-gradient(145deg,#c99c85,#4a3e38);
 }
 
-/* CORRIGÉ : Brunch & Pool Party */
 .album-pool {
   background-image:
     url("assets/pool.jpg"),
@@ -687,7 +688,6 @@ footer p {
     linear-gradient(145deg,#c99c85,#4a3e38);
 }
 
-/* CORRIGÉ : Cérémonie */
 .album-ceremonie {
   background-image:
     url("assets/ceremonie.jpg"),
